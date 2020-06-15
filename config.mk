@@ -26,8 +26,8 @@ STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS)
 STLDFLAGS = $(LIBS) $(LDFLAGS)
 
 # OpenBSD:
-CPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600 -D_BSD_SOURCE
-LIBS = -L$(X11LIB) -lm -lX11 -lutil -lXft \
+#CPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600 -D_BSD_SOURCE
+#LIBS = -L$(X11LIB) -lm -lX11 -lutil -lXft \
        `pkg-config --libs fontconfig` \
        `pkg-config --libs freetype2`
 
