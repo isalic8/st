@@ -177,16 +177,16 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ ControlMask,          XK_Up,		zoom,           {.f = +1} },
-	{ ControlMask,          XK_Down,	zoom,           {.f = -1} },
+	{ ControlMask,          XK_Right,	zoom,           {.f = +1} },
+	{ ControlMask,          XK_Left,	zoom,           {.f = -1} },
 	{ ControlMask,          XK_Home,      	zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ControlMask,          XK_k,     	kscrollup,      {.i = -1} },
-	{ ControlMask,          XK_j,   	kscrolldown,    {.i = -1} },
+	{ ControlMask,          XK_Up,     	kscrollup,      {.i = -1} },
+	{ ControlMask,          XK_Down,   	kscrolldown,    {.i = -1} },
 };
 
 /*
