@@ -1,3 +1,7 @@
+### Preview (using w/ tmux)
+
+![preview image](preview.png)
+
 ###  Installation
 
 ~~~bash
@@ -6,6 +10,13 @@ cd st-simple
 sudo make install
 ~~~
 
-###  Todo 
 
-Include the ability to resize font
+### Some useful stuff
+
+<C-UP> Scrolls up the terminal buffer
+
+<C-DOWN> Scrolls down the terminal buffer
+
+<C-LEFT> Zooms out
+
+<C-RIGHT> Zooms in
