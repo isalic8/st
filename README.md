@@ -5,8 +5,8 @@
 ###  Installation
 
 ~~~bash
-git clone https://gitlab.com/peter-117/st-simple
-cd st-simple
+git clone https://gitlab.com/peternix/st
+cd st
 sudo make install
 ~~~
 
