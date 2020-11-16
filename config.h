@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "TerminessTTF Nerd Font Mono:style=medium:pixelsize=16:antialias=true:autohint=true";
+static char *font = "TerminessTTF Nerd Font:style='bold':pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -84,7 +84,8 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#000", /*hard contrast: #1d2021 / soft contrast: #32302f*/
+
+	"#000000", /*hard contrast: #1d2021 / soft contrast: #32302f*/
 	"#cc241d",
 	"#98971a",
 	"#d79921",
