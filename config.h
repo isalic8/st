@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 //static char *font = "Sauce Code Pro Nerd Font Mono:style='Medium':pixelsize=19:antialias=true:autohint=true";
-static char *font = "Sauce Code Pro Nerd Font Mono:style='Medium':pixelsize=19:antialias=true:autohint=true";
+static char *font = "TerminessTTF Nerd Font Mono:style='Medium':pixelsize=19:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
