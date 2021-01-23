@@ -1440,7 +1440,14 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, int x, i
 	XftDrawSetClipRectangles(xw.draw, winx, winy, &r, 1);
 
 	/* Render the glyphs. */
-	XftDrawGlyphFontSpec(xw.draw, fg, specs, len);
+	/*XftDrawGlyphFontSpec(xw.draw, fg, specs, len);*/
+	/*Fix for colored glyphs crashing st*/
+	/*https://github.com/LukeSmithxyz/voidrice/issues/284#issuecomment-534297661*/
+	FcBool b = FcFalse;
+	FcPatternGetBool(specs->font->pattern, FC_COLOR, 0, &b);
+	if (!b) {
+		XftDrawGlyphFontSpec(xw.draw, fg, specs, len);
+	}
 
 	/* Render underline and strikethrough. */
 	if (base.mode & ATTR_UNDERLINE) {

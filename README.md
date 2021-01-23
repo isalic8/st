@@ -1,22 +1,11 @@
-### Preview (using w/ tmux)
+# Fix: Broken emojis
 
-![preview image](preview.png)
-
-###  Installation
+Install the symbola fontpack and you'll be good to go.
 
 ~~~bash
-git clone https://gitlab.com/peternix/st
-cd st
-sudo make install
+FONTHOME=~/.local/share/fonts/
+mkdir -p $FONTHOME/inconsolata
+cd $FONTHOME/inconsolata
+wget 'https://github.com/google/fonts/blob/master/ofl/inconsolata/Inconsolata%5Bwdth%2Cwght%5D.ttf'
+fc-cache -fv
 ~~~
-
-
-### Some useful stuff
-
-<C-UP> Scrolls up the terminal buffer
-
-<C-DOWN> Scrolls down the terminal buffer
-
-<C-LEFT> Zooms out
-
-<C-RIGHT> Zooms in
